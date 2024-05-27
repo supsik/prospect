@@ -1,0 +1,41 @@
+@font-face
+{
+	font-family: 'Rubik';
+	src: url('./fonts/Rubik/Regular/Rubik-Regular.eot');
+	src: url('./fonts/Rubik/Regular/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+		url('./fonts/Rubik/Regular/Rubik-Regular.woff2') format('woff2'),
+		url('./fonts/Rubik/Regular/Rubik-Regular.woff') format('woff'),
+		url('./fonts/Rubik/Regular/Rubik-Regular.svg#Rubik-Regular') format('svg'),
+		url('./fonts/Rubik/Regular/Rubik-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: 'Rubik';
+	src: url('./fonts/Rubik/Medium/Rubik-Medium.eot');
+	src: url('./fonts/Rubik/Medium/Rubik-Medium.eot?#iefix') format('embedded-opentype'),
+		url('./fonts/Rubik/Medium/Rubik-Medium.woff2') format('woff2'),
+		url('./fonts/Rubik/Medium/Rubik-Medium.woff') format('woff'),
+		url('./fonts/Rubik/Medium/Rubik-Medium.svg#Rubik-Medium') format('svg'),
+		url('./fonts/Rubik/Medium/Rubik-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: 'Rubik';
+	src: url('./fonts/Rubik/Bold/Rubik-Bold.eot');
+	src: url('./fonts/Rubik/Bold/Rubik-Bold.eot?#iefix') format('embedded-opentype'),
+		url('./fonts/Rubik/Bold/Rubik-Bold.woff2') format('woff2'),
+		url('./fonts/Rubik/Bold/Rubik-Bold.woff') format('woff'),
+		url('./fonts/Rubik/Bold/Rubik-Bold.svg#Rubik-Bold') format('svg'),
+		url('./fonts/Rubik/Bold/Rubik-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}

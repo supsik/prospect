@@ -1,0 +1,32 @@
+.instagram{display: none;}
+@media (min-width: $tablet)
+{
+	.instagram{display: block;}
+	.instagram__title
+	{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		line-height: 48px;
+		color: $black-color;
+		margin-bottom: 24px;
+	}
+	.instagram__paragraph
+	{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 32px;
+		color: $black-color;
+		margin-bottom: 48px;
+	}
+	.instagram__image{text-align: center;}
+	.instagram__img{margin-bottom: 64px;}
+}
+@media (min-width: $fullhd)
+{
+	.instagram
+	{
+		.container{padding: 0 24px; max-width: 768px;}
+	}
+}

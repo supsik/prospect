@@ -1,0 +1,49 @@
+{% extends "layouts/layout.twig" %}
+
+{% block page %}
+	{% include "blocks/smile/smile.twig" %}
+	{% include "blocks/crystal/crystal.twig" %}
+	{% include "blocks/gallery/gallery.twig" %}
+	{% include "blocks/instagram/instagram.twig" %}
+	{% include "blocks/author/author.twig" %}
+	<sectino class="info">
+		<div class="container info__container">
+			<div class="info__content info__blog">
+				<div class="info__block">
+					<picture>
+						<source media="(min-width: 1440px)" srcset="img/girlfullhd.webp" type="image/webp">
+						<source media="(min-width: 768px)" srcset="img/girltb.webp" type="image/webp">
+						<img src="img/grilmb.png" alt="" class="info__img">
+					</picture>
+					<div class="info__text">
+						<h2 class="info__title">Персона</h2>
+						<span class="info__desc">Юлия Маскурова — основатель частной стоматологической клиники «Julia Smile»</span>
+					</div>
+				</div>
+				<div class="info__block">
+					<picture>
+						<source media="(min-width: 1440px)" srcset="img/boocfullhd.webp" type="image/webp">
+						<source media="(min-width: 768px)" srcset="img/booc.webp" type="image/webp">
+						<img src="img/grilmb.png" alt="" class="info__img">
+					</picture>
+					<div class="info__text">
+						<h2 class="info__title">Изделия</h2>
+						<span class="info__desc">«Zalina Shishman» — как украшение вашего статуса в обществе</span>
+					</div>
+				</div>
+				<div class="info__block">
+					<picture>
+						<source media="(min-width: 1440px)" srcset="img/bookfullhd.webp" type="image/webp">
+						<source media="(min-width: 768px)" srcset="img/book.webp" type="image/webp">
+						<img src="img/grilmb.png" alt="" class="info__img">
+					</picture>
+					<div class="info__text">
+						<h2 class="info__title">Читальный зал</h2>
+						<span class="info__desc">«Мартин Иден» Джек Лондон. Это история про то, что каждый человек может сделать себя сам</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</sectino>
+{% endblock %}
+

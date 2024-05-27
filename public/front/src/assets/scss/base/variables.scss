@@ -1,0 +1,28 @@
+/*  Переменные со шрифтами  */
+$accent-font: 'Roboto-mono', sans-serif;
+
+/*  Переменные с гарнитурами шрифтов  */
+$thin:					100;
+$light:					300;
+$regular:				normal;
+$medium:				500;
+$bold:					bold;
+
+/* Настройки оснвоно шрифта */
+$mainFontSize: 			13px;
+$mainLineHeight:		17px;
+$mainFontColor:			#000;
+$mainFontWeight:		$regular;
+
+/* Основные цвета */
+$accent-color:			#f4b600;
+$secondary-color: 		#6a7678;
+$black-color:           #181920;
+$ligth-gray-color:      #A1A3B3;
+$gray-color:            #575966;
+
+/* Разрешения */
+$tablet:				768px;
+$desktop:				1024px;
+$widescreen:			1200px;
+$fullhd:				1440px;

@@ -1,0 +1,129 @@
+$containerPadding: 16px;
+.gallery-wr { margin-bottom: 40px; }
+.gallery { padding: 0; }
+.gallery__sections { margin-bottom: 16px; }
+.gallery-section__images { position: relative; margin-bottom: 16px; }
+.gallery-section__arrow
+{
+	background: center / 50% url("img/larrow.svg"), linear-gradient(270deg, rgba($black-color, 0.3) 0%, rgba(24, 25, 32, 0) 100%);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+	width: 80px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	cursor: pointer;
+	&--prev
+	{
+		left: 0;
+		transform: scaleX(-1);
+	}
+	&--next { right: 0; }
+}
+.gallery-section__img
+{
+	font-size: 0;
+	line-height: 0;
+	max-width: 100%;
+	height: 216px;
+	img
+	{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+.gallery-section__content
+{
+	padding: 0 $containerPadding;
+	p
+	{
+		color: $black-color;
+		font-size: 18px;
+		line-height: 32px;
+		margin: 0 0 16px 0;
+		font-weight: normal;
+		&:last-child { margin-bottom: 0; }
+	}
+}
+.gallery__pagination
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 $containerPadding;
+}
+.gallery__arrow
+{
+	border: 1px solid $ligth-gray-color;
+	border-radius: 2px;
+	padding: 25px 32px;
+	font-size: 0;
+	line-height: 0;
+	transition: .2s all ease;
+	user-select: none;
+	cursor: pointer;
+	&.slick-disabled { opacity: 0.3; }
+	&--prev .gallery__arrow-icon { transform: scaleX(-1); }
+}
+.gallery__arrow-icon
+{
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
+	width: 7px;
+	height: 13px;
+	svg
+	{
+		object-fit: contain;
+		width: 100%;
+		height: 100%;
+	}
+}
+.gallery__arrow-text
+{
+	display: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+}
+.gallery__page-info
+{
+	font-size: 16px;
+	line-height: 24px;
+	color: $ligth-gray-color;
+	text-transform: uppercase;
+}
+@media (min-width: $tablet)
+{
+	.gallery-wr { margin-bottom: 64px; }
+	.gallery { max-width: 720px; }
+	.gallery__pagination { padding: 0; }
+	.gallery__arrow
+	{
+		padding: 25px 40px;
+		&--prev
+		{
+			.gallery__arrow-icon { margin-right: 16px; }
+		}
+		&--next
+		{
+			.gallery__arrow-icon { margin-left: 16px; }
+		}
+	}
+	.gallery__arrow-text { display: inline-block; }
+	.gallery__sections { margin-bottom: 32px; }
+	.gallery-section__images { margin-bottom: 32px; }
+	.gallery-section__content { padding: 0; }
+	.gallery-section__img { height: 480px; }
+	.gallery-section__arrow { background: center / 80% no-repeat url("img/larrow.svg"); }
+}
+
+@media (min-width: $fullhd)
+{
+	.gallery { max-width: 720px; }
+}

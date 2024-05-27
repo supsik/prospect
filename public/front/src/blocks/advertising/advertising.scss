@@ -1,0 +1,104 @@
+.advertising__title
+{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 32px;
+	color: $black-color;
+}
+.advertising__text
+{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: $ligth-gray-color;
+	margin-bottom: 8px;
+}
+.advertising__info,
+.advertising__info a
+{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: $gray-color;
+	margin-bottom: 24px;
+}
+.advertising__desc
+{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	color: $ligth-gray-color;
+}
+.advertising__name
+{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: $gray-color;
+}
+.advertising__img
+{
+	width: 240px;
+	height: 200px;
+	margin: 0 auto 16px;
+	display: block;
+	object-fit: cover;
+	object-position: center;
+	&--placeholder { background-color: $ligth-gray-color; }
+}
+.advertising__border
+{
+	border-bottom:1px solid #E5E5E5;
+	margin-top: 40px;
+	margin-bottom: 39px;
+}
+.advertising__telephon,.advertising__info{display: block;}
+@media (min-width: $tablet)
+{
+	.advertising__title{font-size: 32px; line-height: 48px; margin-bottom: 32px;}
+	.advertising__info,
+	.advertising__info a
+	{
+		font-size: 20px; line-height: 32px;
+	}
+	.advertising__info-block
+	{
+		display: grid;
+		grid-template-columns: repeat(2,auto);
+	}
+	.advertising__tablet
+	{
+		display: grid;
+		grid-template-columns: repeat(2,auto);
+	}
+	.advertising__address{margin-right: 30px;}
+	.advertising__connection{margin-right: 52px;}
+	.advertising__name{font-size: 20px; line-height: 32px;}
+	.advertising__telephon{margin-bottom: 32px;}
+	.advertising__border{margin-bottom: 64px; margin-top: 64px;}
+	.advertising__img
+	{
+		width: 220px;
+		height: 180px;
+	}
+}
+@media (min-width: $fullhd)
+{
+	.advertising__address{margin-right: 168px;}
+	.advertising__connection{margin-right: 186px;}
+	.advertising__border{margin-bottom: 95px; margin-top: 95px;}
+	.advertising__img
+	{
+		width: 240px;
+		height: 200px;
+	}
+}

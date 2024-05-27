@@ -1,0 +1,19 @@
+.container
+{
+	// max-width: $widescreen;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+body{min-width: 375px;}
+@media (min-width: $tablet)
+{
+	.container{padding-left: 24px; padding-right: 24px;}
+}
+@media (min-width: $fullhd)
+{
+	.container{max-width: 1128px;}
+}

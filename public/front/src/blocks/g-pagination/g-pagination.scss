@@ -1,0 +1,112 @@
+.g-pagination {display: flex; justify-content: space-between; align-items: center;}
+.g-pagination__arrow, .g-pagination__number
+{
+	border-radius: 5px;
+	height: 64px;
+	width: 72px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 22px;
+	font-weight: 500;
+	position: relative;
+	cursor: pointer;
+}
+.g-pagination__number
+{
+	margin-right: 5px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: $ligth-gray-color;
+	&:last-child{margin-right: 0;}
+}
+.g-pagination__text
+{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: $ligth-gray-color;
+	margin-right: 5px;
+}
+.g-pagination__numbers{display: flex;}
+.g-pagination__arrow
+{
+	&--left{margin-right: 5px;}
+	&--right{margin-left: 5px;}
+}
+.g-pagination__arrow:before
+{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 36%;
+	top: 32px;
+	transform: translateY(-50%);
+	border: 8px solid transparent;
+	height: 35px;
+	background-image:url("img/arrowr.svg");
+	background-repeat:no-repeat;
+}
+.g-pagination__arrow--left:before
+{
+	left: 22px;
+	top: -2px;
+	right: 32%;
+	transform: rotateZ(360deg) translateY(50%);
+	background-image:url("img/arrowl.svg");
+	background-repeat:no-repeat;
+}
+.g-pagination__arrow--left,.g-pagination__arrow--right
+{
+	border: 1px solid #E5E5E5;
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+.g-pagination__arrow--left,.g-pagination__arrow--right
+{
+	span{display: none;}
+}
+@media (min-width: $tablet)
+{
+	.g-pagination__arrow--left,.g-pagination__arrow--right
+	{
+		span{display: block;}
+	}
+	.g-pagination__arrow
+	{
+		position: static;
+		&:before{left: 66%;}
+		&--right
+		{
+			width: 221px;
+		    display: flex;
+		    align-items: center;
+		    padding-left: 30px;
+		    font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			text-transform: uppercase;
+			color: $black-color;
+		}
+		&--left
+		{
+			&:before{left:40px;}
+			width: 221px;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			text-transform: uppercase;
+			color: $ligth-gray-color;
+			display: flex;
+			align-items:center;
+			padding-left: 72px;
+		}
+	}
+}

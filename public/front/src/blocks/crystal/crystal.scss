@@ -1,0 +1,277 @@
+.crystal
+{
+	.crystal__litle-img
+	{
+		height: 195px;
+		background-image:url("img/head.png");
+		background-size: 100%;
+		margin-top: 65px;
+		margin-bottom: 12px;
+	}
+}
+.crystal__head
+{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 32px;
+	color: $gray-color;
+	margin-bottom: 32px;
+}
+.crystal__info
+{
+	h1 {line-height: 40px;}
+	h2
+	{
+		font-size: 20px;
+		line-height: 32px;
+		margin-bottom: 16px;
+		color: #181920;
+	}
+	p
+	{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 32px;
+		color: $black-color;
+		margin-bottom: 32px;
+		word-break: break-word;
+	}
+	img
+	{
+		display: block;
+		object-fit: contain;
+		max-width: 100%;
+		margin: 0 auto;
+		margin-top: 32px;
+		margin-bottom: 16px;
+	}
+	a,
+	a:visited
+	{
+		color: #FF0000;
+		transition: .12s all ease;
+		border-bottom: 2px transparent solid;
+	}
+	a:hover { border-bottom-color: #FF0000; }
+}
+.crystal figure
+{
+	margin-block-start: 0;
+    margin-block: 0;
+    margin-block-end: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+}
+.crystal figcaption
+{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: $ligth-gray-color;
+	margin-bottom: 32px;
+	padding: 0.2em 0.5em 0.2em 0;
+}
+@media (min-width: $tablet)
+{
+	.crystal
+	{
+		.crystal__litle-img
+		{
+			height: 480px;
+			background-image:url("img/headtablet.png");
+			background-size: 100%;
+		}
+		.slick-arrow
+		{
+			position: absolute;
+			top: 81px;
+			display: block;
+			z-index: 2;
+		}
+		.next-arrow,.prev-arrow
+		{
+			width:40px;
+			height:40px;
+			border-radius: 50%;
+		}
+		.next-arrow
+		{
+			top: 226px;
+			right: 25px;
+			background-image:url("img/larrow.svg");
+			background-repeat:no-repeat;
+		}
+		.prev-arrow
+		{
+			top: 226px;
+			left: 20px;
+			background-image:url("img/larrow.svg");
+			background-repeat:no-repeat;
+		}
+	}
+	.crystal__info
+	{
+		h2
+		{
+			font-size: 32px;
+			line-height: 48px;
+			margin-bottom: 24px;
+		}
+	}
+	.crystal__copyrigth{margin-bottom: 64px;}
+}
+@media (min-width: $fullhd)
+{
+	.crystal
+	{
+		.crystal__container
+		{
+			padding: 0 24px;
+			max-width: 720px;
+		}
+		.crystal__litle-img
+		{
+		height: 624px;
+		background-image:url("img/headfullhd.png");
+		background-size: 100%;
+		margin-bottom: 16px;
+		}
+		.next-arrow
+		{
+			top: 298px;
+			right: 35px;
+		}
+		.prev-arrow
+		{
+			top: 298px;
+			left: 30px;
+		}
+	}
+}
+
+.crystal{margin-bottom: 32px;}
+.crystal__absolute{display: none;}
+.crystal h2
+{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 32px;
+	color: $black-color;
+	margin-bottom: 16px;
+}
+.crystal li
+{
+	list-style: none;
+}
+.crystal__desc
+{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 32px;
+	color: $black-color;
+	margin-bottom: 16px;
+}
+.crystal h3
+{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 32px;
+	color: $black-color;
+	margin-bottom: 16px;
+}
+.crystal figure
+{
+	margin-block-start: 0;
+    margin-block: 0;
+    margin-block-end: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+}
+.crystal ul{margin-bottom: 16px;}
+.crystal ul li
+{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 32px;
+	color: #181920;
+}
+.crystal b
+{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 32px;
+	color: $black-color;
+}
+.crystal__name
+{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	color: $black-color;
+}
+.crystal figcaption
+{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: $ligth-gray-color;
+}
+.crystal img
+{
+	margin-top: 32px;
+	margin-bottom: 16px;
+	width: auto;
+	max-width: 100%;
+}
+.crystal__img{width: 100%;}
+@media (min-width: $tablet)
+{
+	.crystal{margin-bottom: 64px;}
+	.crystal h2{font-size: 32px; line-height: 48px; margin-bottom: 24px;}
+	.crystal__desc{margin-bottom: 24px;}
+}
+@media (min-width: $fullhd)
+{
+	.crystal
+	{
+		.container{max-width: 768px;}
+	}
+
+	.crystal h2
+	{
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	.crystal__absolute
+	{
+		width: 264px;
+		display: block;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 24px;
+		color: $gray-color;
+		position: absolute;
+   		left: 105%;
+    	top: 174px;
+	}
+	.crystal__border
+	{
+		border-bottom: 1px solid $gray-color;
+		opacity: 0.1;
+		padding-top: 15px;
+		margin-bottom: 15px;
+	}
+}
+

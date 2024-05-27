@@ -1,0 +1,22 @@
+# AuthType Basic
+# AuthName "Private zone. Go away."
+# AuthUserFile  /var/www/odvapro/wwwdev/.htpasswd
+# Require valid-user
+
+<IfModule mod_rewrite.c>
+        RewriteEngine On
+	RewriteRule ^element\/$ element/$1 [L]
+	#RewriteRule element/(.*) element/$1 [L]
+        # old article redirect
+        RewriteRule ([0-9]+)/([0-9]+)/([0-9]+)/(.*) /article/$4 [R=301,L]
+
+        # trailing slash
+        RewriteCond %{REQUEST_URI} !(/$|\.)
+        RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
+        #RewriteRule  ^$/element/ element/ [L]
+        RewriteRule  ^$ public/    [L]
+        RewriteRule  (.*) public/$1 [L]
+	#RewriteRule  (.*) public/$1 [L]
+        Header add Access-Control-Allow-Origin "*"
+        Header add Access-Control-Allow-Methods: "GET,POST,OPTIONS,DELETE,PUT"
+</IfModule>

@@ -1,0 +1,64 @@
+/* mixins */
+@import 'base/mixins.scss';
+
+/* base */
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/default';
+@import 'base/prettify';
+
+/* blocks */
+@import 'blocks/footer/footer';
+@import 'blocks/g-slider/g-slider';
+@import 'blocks/g-pagination/g-pagination';
+@import 'blocks/header/header';
+@import 'blocks/info/info';
+@import 'blocks/digest/digest';
+@import 'blocks/water/water';
+@import 'blocks/recent/recent';
+@import 'blocks/collected/collected';
+@import 'blocks/magazines/magazines';
+@import 'blocks/edition/edition';
+@import 'blocks/advertising/advertising';
+@import 'blocks/staff/staff';
+@import 'blocks/smile/smile';
+@import 'blocks/crystal/crystal';
+@import 'blocks/gallery/gallery';
+@import 'blocks/instagram/instagram';
+@import 'blocks/author/author';
+@import 'blocks/bottle/bottle';
+@import 'blocks/theory/theory';
+@import 'blocks/sketch/sketch';
+@import 'blocks/g-popup/g-popup';
+@import 'blocks/poupap/poupap';
+@import 'blocks/zero/zero';
+@import 'blocks/corn/corn';
+@import 'blocks/mobile-menu/mobile-menu';
+@import 'blocks/standart-post-head/standart-post-head';
+
+/* pages */
+@import 'src/news/news';
+@import 'src/blog/blog';
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+	&:before,
+	&:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+html
+{
+	line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+	-webkit-font-smoothing: antialiased;
+}

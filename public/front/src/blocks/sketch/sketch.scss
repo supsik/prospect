@@ -1,0 +1,34 @@
+.sketch{display: none;}
+@media (min-width: $tablet)
+{
+	.sketch{display: block;}
+	.sketch__title
+	{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		line-height: 48px;
+		color: $black-color;
+		margin-bottom: 24px;
+	}
+	.sketch__paragraph
+	{
+		p
+		{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 32px;
+			color: $black-color;
+			margin-bottom: 48px;
+		}
+	}
+	.sketch__video{margin-bottom: 48px;}
+}
+@media (min-width: $fullhd)
+{
+	.sketch
+	{
+		.container{max-width: 768px;}
+	}
+}

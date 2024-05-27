@@ -1,0 +1,8 @@
+{
+	"baseUrl":"http://localhost:8080/element/",
+	"env":
+	{
+		"apiUrl": "http://element.dev.odva.pro/element/api/"
+	},
+	"chromeWebSecurity": false
+}

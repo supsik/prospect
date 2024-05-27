@@ -1,0 +1,25 @@
+<header class="header--transparent">
+	<div class="container">
+		<div class="header__main">
+			<a class="header__logo" href="#">
+				<img src="img/logo.svg" alt="Logo">
+			</a>
+			<ul class="header__menu">
+				<a href="#"><li class="header__item">Новости</li></a>
+				<a href="#"><li class="header__item">Архив номеров</li></a>
+				<a href="#"><li class="header__item">Интервью</li></a>
+				<a href="#"><li class="header__item">Персона</li></a>
+				<a href="#"><li class="header__item">Фотопроекты</li></a>
+				<a href="#"><li class="header__item">Рубрики</li></a>
+				<a href="#"><li class="header__item header__item-flex">Контакты</li></a>
+			</ul>
+			<div onclick="o2.mobileMenu.toggle()" class="header__burger _mobile-burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+	{% include '../mobile-menu/mobile-menu.twig' %}
+</header>
+
